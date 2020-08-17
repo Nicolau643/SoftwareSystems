@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.SuccessMessageController">
+   <children>
+      <Label fx:id="labelMessage" layoutX="77.0" layoutY="14.0" text="Aula Criada com Sucesso!!" />
+      <ImageView fitHeight="73.0" fitWidth="146.0" layoutX="97.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/yey.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="okButton" layoutX="134.0" layoutY="140.0" mnemonicParsing="false" onAction="#okButton" text="ok" />
+   </children>
+</Pane>

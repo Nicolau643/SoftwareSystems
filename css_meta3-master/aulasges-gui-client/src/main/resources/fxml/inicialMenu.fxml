@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.MenuInicialController">
+   <children>
+      <Button fx:id="criaAulaButton" layoutX="255.0" layoutY="109.0" mnemonicParsing="false" onAction="#criarAula" text="Criar Aula" />
+      <Button fx:id="ativarAulaButton" layoutX="253.0" layoutY="152.0" mnemonicParsing="false" onAction="#ativarAula" text="Ativar Aula" />
+      <Button fx:id="inscAulaButton" layoutX="244.0" layoutY="193.0" mnemonicParsing="false" onAction="#inscreverAula" text="Inscrever Aula" />
+      <Button fx:id="ocupInstButton" layoutX="224.0" layoutY="242.0" mnemonicParsing="false" onAction="#ocupacao" text="Ocupacao Instalacao" />
+   </children>
+</Pane>

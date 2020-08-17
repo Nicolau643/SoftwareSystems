@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.CriarAulaController">
+   <children>
+      <ListView fx:id="listModCriaAula" layoutX="51.0" layoutY="66.0" prefHeight="130.0" prefWidth="200.0" />
+      <Label layoutX="51.0" layoutY="38.0" text="Modalidades Disponiveis:" />
+      <Label layoutX="314.0" layoutY="47.0" text="Introduza a modalidade escolhida:" />
+      <Label layoutX="314.0" layoutY="101.0" text="Introduza o nome da aula:" />
+      <Label layoutX="314.0" layoutY="146.0" text="Introduza os dias de semana:" />
+      <Label layoutX="314.0" layoutY="195.0" text="Introduza a hora de inicio:" />
+      <Label layoutX="314.0" layoutY="238.0" text="Introduza a duracao(em minutos):" />
+      <TextField fx:id="textFieldMod" layoutX="314.0" layoutY="66.0" />
+      <TextField fx:id="textFieldNomeAula" layoutX="314.0" layoutY="118.0" />
+      <TextField fx:id="textFieldDias" layoutX="314.0" layoutY="166.0" promptText="Ex: Segunda,Terça" />
+      <TextField fx:id="textFieldHoraIni" layoutX="314.0" layoutY="212.0" promptText="Ex: 10:30" />
+      <TextField fx:id="textFieldDuracao" layoutX="314.0" layoutY="261.0" />
+      <Button fx:id="criarButton" layoutX="522.0" layoutY="336.0" mnemonicParsing="false" onAction="#criarAulaClick" text="Criar" />
+      <Button fx:id="voltarButton" layoutX="454.0" layoutY="336.0" mnemonicParsing="false" onAction="#voltarClick" text="Voltar" />
+   </children>
+</Pane>

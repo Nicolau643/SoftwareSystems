@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.AtivarAulaController">
+   <children>
+      <Label layoutX="42.0" layoutY="14.0" text="Instalacoes:" />
+      <ListView fx:id="nomesInstList" layoutX="34.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="274.0" layoutY="31.0" text="Introduza o nome da aula:" />
+      <TextField fx:id="nomeAula" layoutX="274.0" layoutY="48.0" />
+      <Label layoutX="274.0" layoutY="83.0" text="Introduza a o nome da instalacao:" />
+      <TextField fx:id="nomeInst" layoutX="274.0" layoutY="100.0" />
+      <Label layoutX="274.0" layoutY="131.0" text="Data de Inicio" />
+      <TextField fx:id="dataIni" layoutX="274.0" layoutY="148.0" prefHeight="27.0" prefWidth="89.0" promptText="yyyy-mm-dd" />
+      <Label layoutX="381.0" layoutY="132.0" text="Data de Fim" />
+      <TextField fx:id="dataEnd" layoutX="381.0" layoutY="149.0" prefHeight="27.0" prefWidth="89.0" promptText="yyyy-mm-dd" />
+      <Label layoutX="274.0" layoutY="192.0" prefHeight="17.0" prefWidth="254.0" text="Introduza o numero maximo de alunos da aula:" />
+      <TextField fx:id="maxAlunos" layoutX="528.0" layoutY="187.0" prefHeight="27.0" prefWidth="52.0" />
+      <Button fx:id="ativarAulaButton" layoutX="501.0" layoutY="334.0" mnemonicParsing="false" onAction="#ativarAulaClick" text="Ativar Aula" />
+      <Button fx:id="voltarButton" layoutX="445.0" layoutY="334.0" mnemonicParsing="false" onAction="#voltarClick" text="Voltar" />
+   </children>
+</Pane>

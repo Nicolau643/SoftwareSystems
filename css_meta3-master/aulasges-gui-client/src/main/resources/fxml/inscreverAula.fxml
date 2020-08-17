@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.InscreverAulaController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" text="Escolha uma modalidade:" />
+      <ChoiceBox fx:id="modalidadeDropDown" layoutX="23.0" layoutY="38.0" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="73.0" text="Tipo de inscricao:" />
+      <ChoiceBox fx:id="inscDropDown" layoutX="23.0" layoutY="90.0" prefWidth="150.0" />
+      <Button fx:id="procurarButton" layoutX="23.0" layoutY="143.0" mnemonicParsing="false" onAction="#procurarAulasClick" text="Procurar Aulas" />
+      <TableView fx:id="aulasTable" layoutX="198.0" layoutY="38.0" prefHeight="200.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="colunaHorario" prefWidth="75.0" text="Horario" />
+            <TableColumn fx:id="diasSemanaColuna" prefWidth="75.0" text="Dias de Semana" />
+            <TableColumn fx:id="instColuna" prefWidth="75.0" text="Instalacao" />
+            <TableColumn fx:id="vagasColuna" prefWidth="75.0" text="Vagas" />
+        </columns>
+      </TableView>
+      <Label layoutX="198.0" layoutY="14.0" text="Aulas:" />
+      <Label layoutX="24.0" layoutY="247.0" text="Introduza o nome da aula que se quer inscrever:" />
+      <TextField fx:id="nomeAulaTextField" layoutX="291.0" layoutY="242.0" />
+      <Label layoutX="25.0" layoutY="282.0" text="Introduza o numero de utente:" />
+      <TextField fx:id="numUtenteTextField" layoutX="198.0" layoutY="277.0" />
+      <Button fx:id="inscButton" layoutX="480.0" layoutY="351.0" mnemonicParsing="false" onAction="#inscreverAulaClick" text="Inscrever Aula" />
+      <Button fx:id="voltarButton" layoutX="419.0" layoutY="351.0" mnemonicParsing="false" onAction="#voltarClick" text="Voltar" />
+      <Label layoutX="25.0" layoutY="320.0" text="Caso seja Avulso,Introduza o dia de Semana:" />
+      <TextField fx:id="diaDeSemanaTextField" layoutX="282.0" layoutY="315.0" promptText="Ex: Terça" />
+   </children>
+</Pane>

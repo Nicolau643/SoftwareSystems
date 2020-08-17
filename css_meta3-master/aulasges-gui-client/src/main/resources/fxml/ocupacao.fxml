@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.fx.inputcontroller.OcupacaoController">
+   <children>
+      <Label layoutX="30.0" layoutY="41.0" text="Introduza o nome da instalacao:" />
+      <TextField fx:id="nomeInstTextField" layoutX="30.0" layoutY="65.0" />
+      <Label layoutX="30.0" layoutY="104.0" text="Introduza uma data:" />
+      <TextField fx:id="dataTextField" layoutX="30.0" layoutY="121.0" promptText="yyyy-mm-dd" />
+      <TableView fx:id="aulasTable" layoutX="256.0" layoutY="65.0" prefHeight="200.0" prefWidth="283.0">
+        <columns>
+          <TableColumn fx:id="nomeColumn" prefWidth="118.0" text="Nome" />
+          <TableColumn fx:id="horarioColumn" prefWidth="82.0" text="Horario" />
+            <TableColumn fx:id="duracaoColumn" text="Duracao" />
+        </columns>
+      </TableView>
+      <Label layoutX="256.0" layoutY="41.0" text="Aulas:" />
+      <Button fx:id="procurarTextField" layoutX="30.0" layoutY="173.0" mnemonicParsing="false" onAction="#procurarClick" text="Procurar" />
+      <Button fx:id="voltarButton" layoutX="489.0" layoutY="347.0" mnemonicParsing="false" onAction="#voltarClick" text="Voltar" />
+   </children>
+</Pane>
